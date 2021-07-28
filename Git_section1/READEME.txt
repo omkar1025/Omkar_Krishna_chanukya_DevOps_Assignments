@@ -1,0 +1,4 @@
+Created sone html file
+changed them
+staged them 
+and finally commited them as well

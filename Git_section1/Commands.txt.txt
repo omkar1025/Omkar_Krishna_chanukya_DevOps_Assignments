@@ -1,0 +1,78 @@
+chann@NB-OMKAR MINGW64 ~/Desktop/assign (master)
+$ mkdir Git_section1
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign (master)
+$ cd Git_section1
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (master)
+$ touch README.txt
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (master)
+$ git branch html-assign
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (master)
+$ git checkout html-assign
+Switched to branch 'html-assign'
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (html-assign)
+$ git commit -m "cmtng html files"
+[html-assign 0d04757] cmtng html files
+ 2 files changed, 23 insertions(+)
+ create mode 100644 Desktop/assign/Git_section1/docu.html
+ create mode 100644 Desktop/assign/Git_section1/image.html
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (html-assign)
+$ vi docu.html
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (html-assign)
+$ git add docu.html
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (html-assign)
+$ git commit -m "cmtng files"
+[html-assign ad35ee7] cmtng files
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ vi READEME.txt
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (master)
+$ git add READEME.txt
+warning: LF will be replaced by CRLF in Desktop/assign/Git_section1/READEME.txt.
+The file will have its original line endings in your working directory
+g
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (master)
+$ git commit -m "cmtng file"
+[master 4a7d257] cmtng file
+ 1 file changed, 4 insertions(+)
+ create mode 100644 Desktop/assign/Git_section1/READEME.txt
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (master)
+$ $ git commit -m "cmtng files"
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (html-assign)
+bash: syntax error near unexpected token `('
+[html-assign ad35ee7] cmtng files
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (html-assign)
+$ git checkout master
+Switched to branch 'master'
+M       Assignments/readme.txt
+D       Desktop/demo/.gitignore
+D       Desktop/demo/one.txt
+D       Desktop/demo/two.txt
+D       git_demo01/m1.txt
+D       git_demo01/m2.txt
+M       project_dir0/index.html
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (master)
+$ git merge html-assign
+Merge made by the 'recursive' strategy.
+ Desktop/assign/Git_section1/docu.html  | 12 ++++++++++++
+ Desktop/assign/Git_section1/image.html | 11 +++++++++++
+ 2 files changed, 23 insertions(+)
+ create mode 100644 Desktop/assign/Git_section1/docu.html
+ create mode 100644 Desktop/assign/Git_section1/image.html
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section1 (master)
+$ git branch -d html-assign
+Deleted branch html-assign (was ad35ee7).
+).
