@@ -1,0 +1,35 @@
+chann@NB-OMKAR MINGW64 ~/Desktop/assign (master)
+$ cd Git_section2
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section2 (master)
+$ touch READEME.txt
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section2 (master)
+$ git checkout -b css-assign
+Switched to a new branch 'css-assign'
+
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section2 (css-assign)
+$ git commit -m "cmtng css files"
+[css-assign d9544af] cmtng css files
+ 2 files changed, 17 insertions(+)
+ create mode 100644 Desktop/assign/Git_section2/one.css
+ create mode 100644 Desktop/assign/Git_section2/two.css
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section2 (css-assign)
+$ vi READEME.txt
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section2 (css-assign)
+$ git add READEME.txt
+warning: LF will be replaced by CRLF in Desktop/assign/Git_section2/READEME.txt.
+The file will have its original line endings in your working directory
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section2 (css-assign)
+$ git commit -m "cmtng redme file in css-assign branch"
+[css-assign cdc6bb8] cmtng redme file in css-assign branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Desktop/assign/Git_section2/READEME.txt
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section2 (css-assign)
+$ git checkout master
+Switched to branch 'master'
+
