@@ -1,0 +1,142 @@
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ ls
+index.html
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git add index.html
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git commit -m "cmtng index file"
+[master (root-commit) f0369ad] cmtng index file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ vi index.html
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ touch info.txt
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ touch .gitignore
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ vi .gitignore
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git add index.html
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+g
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git commit -m "cmtng 2"
+[master 6766b56] cmtng 2
+ 2 files changed, 2 insertions(+)
+ create mode 100644 info.txt
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git log
+commit 6766b5677ab07d83b19af5adbdc7246bb0ebfc01 (HEAD -> master)
+Author: chanu1025 <omkarchanukya97@gmail.com>
+Date:   Fri Jul 16 14:17:04 2021 +0530
+
+    cmtng 2
+
+commit f0369ad1cbcfacd90c3c8af75b2150d39aca631f
+Author: chanu1025 <omkarchanukya97@gmail.com>
+Date:   Fri Jul 16 14:06:27 2021 +0530
+
+    cmtng index file
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ vi index.html
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git add index.html
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git restore --staged index.html
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ vi index.html
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git config --global alias.my-add add
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git my-add index.html
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git commit -m "cmtng file"
+[master 2fae41d] cmtng file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git log
+commit 2fae41d98e88b744c72c2ab84d23a8500d7981c6 (HEAD -> master)
+Author: chanu1025 <omkarchanukya97@gmail.com>
+Date:   Fri Jul 16 14:29:44 2021 +0530
+
+    cmtng file
+
+commit 32e8ec1a7b694c37af161a3ccbb806685879999d
+Author: chanu1025 <omkarchanukya97@gmail.com>
+Date:   Fri Jul 16 14:21:42 2021 +0530
+
+    Comitting index file3
+
+commit 6766b5677ab07d83b19af5adbdc7246bb0ebfc01
+Author: chanu1025 <omkarchanukya97@gmail.com>
+Date:   Fri Jul 16 14:17:04 2021 +0530
+
+    cmtng 2
+
+commit f0369ad1cbcfacd90c3c8af75b2150d39aca631f
+Author: chanu1025 <omkarchanukya97@gmail.com>
+Date:   Fri Jul 16 14:06:27 2021 +0530
+
+    cmtng index file
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git reset --soft HEAD~1
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section0 (master)
+$ git log
+commit 32e8ec1a7b694c37af161a3ccbb806685879999d (HEAD -> master)
+Author: chanu1025 <omkarchanukya97@gmail.com>
+Date:   Fri Jul 16 14:21:42 2021 +0530
+
+    Comitting index file3
+
+commit 6766b5677ab07d83b19af5adbdc7246bb0ebfc01
+Author: chanu1025 <omkarchanukya97@gmail.com>
+Date:   Fri Jul 16 14:17:04 2021 +0530
+
+    cmtng 2
+
+commit f0369ad1cbcfacd90c3c8af75b2150d39aca631f
+Author: chanu1025 <omkarchanukya97@gmail.com>
+Date:   Fri Jul 16 14:06:27 2021 +0530
+
+    cmtng index file
