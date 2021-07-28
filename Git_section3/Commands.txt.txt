@@ -1,0 +1,17 @@
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section3 (js-assign)
+$ git add de.js
+warning: LF will be replaced by CRLF in Git_section3/de.js.
+The file will have its original line endings in your working directory
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section3 (js-assign)
+$ git add dr.js
+warning: LF will be replaced by CRLF in Git_section3/dr.js.
+The file will have its original line endings in your working directory
+
+chann@NB-OMKAR MINGW64 ~/Desktop/assign/Git_section3 (js-assign)
+$ git commit -m "cmtng js files"
+[js-assign e870808] cmtng js files
+ 2 files changed, 37 insertions(+)
+ create mode 100644 Git_section3/de.js
+ create mode 100644 Git_section3/dr.js
+
